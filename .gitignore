@@ -1,0 +1,69 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool
+*.out
+coverage.out
+coverage.html
+
+# Dependency directories
+vendor/
+
+# Go workspace file
+go.work
+go.work.sum
+
+# Compiled binaries
+/bin/
+/dist/
+/build/
+cmd/**/main
+cmd/**/*.exe
+# Ignore compiled binaries in examples (but keep .go source files)
+# Match binary files (not directories) in examples subdirectories
+cmd/examples/basic/basic
+cmd/examples/chain_of_thought/chain_of_thought
+cmd/examples/optimizer/optimizer
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.classpath
+.settings/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Log files
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Build artifacts
+*.a
+*.o
+
+# Debug files
+debug
+__debug_bin
