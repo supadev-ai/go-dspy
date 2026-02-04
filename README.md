@@ -1,5 +1,8 @@
 # go-dspy
 
+[![Tests](https://github.com/supadev-ai/go-dspy/workflows/Tests/badge.svg)](https://github.com/supadev-ai/go-dspy/actions)
+[![CI](https://github.com/supadev-ai/go-dspy/workflows/CI/badge.svg)](https://github.com/supadev-ai/go-dspy/actions)
+
 **go-dspy** is a Go-native implementation of DSPy (Declarative Self-Improving Programs), enabling structured LLM pipelines, prompt optimization, and self-improving reasoning graphs with static typing, performance, and production readiness.
 
 > **Developed by [SupaDev](https://github.com/supadev-ai)** - An AI services company specializing in production-ready AI infrastructure and tooling.
@@ -223,6 +226,25 @@ Current test coverage:
 - `optimizer`: 86.5% coverage
 - `memory`: 92.6% coverage
 - `tracing`: 100% coverage
+
+## CI/CD
+
+This project uses GitHub Actions for continuous integration:
+
+- **Tests**: Automatically runs on every push and pull request
+  - Tests across Go 1.21 and 1.22
+  - Race detector enabled
+  - Coverage reports generated
+  - Results displayed in GitHub UI
+
+- **Linting**: Code quality checks
+  - `gofmt` formatting validation
+  - `go vet` static analysis
+  - Module verification
+
+- **Build**: Ensures all packages compile successfully
+
+View test results and coverage in the [Actions tab](https://github.com/supadev-ai/go-dspy/actions).
 
 ## Roadmap
 
